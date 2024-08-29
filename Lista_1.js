@@ -136,9 +136,75 @@ const valorB = parseFloat(prompt("Digite o valor B: "));
 ordenarValores(valorA, valorB);
 
 // Exercicio 9
+for (let i = 10; i >= 1; i--) {
+  console.log(`Contagem regressiva: ${i}`);
+}
+console.log("Fim da contagem!");
 // Exercicio 10
+const numero = parseInt(prompt("Digite um número inteiro: "));
+
+for (let i = 0; i < 10; i++) {
+  console.log(`O número é: ${numero}`);
+}
 // Exercicio 11
+let soma = 0;
+
+for (let i = 0; i < 5; i++) {
+  const numero = parseInt(prompt(`Digite o número ${i + 1}: `));
+  soma += numero;
+}
+console.log(`A soma total é: ${soma}`);
 // Exercicio 12
+
+const numero = parseInt(prompt("Digite um número entre 1 e 10: "));
+
+if (numero < 1 || numero > 10) {
+  console.log("Número inválido. Por favor, digite um número entre 1 e 10.");
+} else {
+  console.log(`Tabuada do ${numero}:`);
+  for (let i = 0; i <= 10; i++) {
+    console.log(`${numero} x ${i} = ${numero * i}`);
+  }
+}
 // Exercicio 13
+let soma = 0;
+let quantidade = 0;
+
+while (true) {
+  const numero = parseFloat(prompt("Digite um número (ou 0 para calcular a média): "));
+  if (numero === 0) {
+    break; 
+  }
+  soma += numero;
+  quantidade++;
+}
+
+if (quantidade === 0) {
+  console.log("Você não digitou nenhum número.");
+} else {
+    const media = soma / quantidade;
+    console.log(`A média é: ${media.toFixed(2)}`);
+}
 // Exercicio 14
+// Ler o número do usuário
+const numero = parseInt(prompt("Digite um número: "));
+
+if (numero < 0) {
+  console.log("Número inválido. O fatorial não é definido para números negativos.");
+} else {
+  let fatorial = 1;
+  for (let i = 1; i <= numero; i++) {
+    fatorial *= i;
+  }
+  console.log(`O fatorial de ${numero} é: ${fatorial}`);
+}
 // Exercicio 15
+let anterior = 0;
+let atual = 1;
+
+for (let i = 0; i < 10; i++) {
+  console.log(atual);
+  let proximo = anterior + atual;
+  anterior = atual;
+  atual = proximo;
+}
