@@ -1,4 +1,5 @@
 **Iniciando**
+
 Olá eu sou Miguel Morello, este é meu repositorio de lista de exercicios, no qual eu colocarei as resoluções dos exercicios passados como tarefa pelo curso Turma Fullstack 2,  do Codifica com o +PraTi.
 Para executar os exercicios em sua maquina, siga estes passos:
 
@@ -15,4 +16,5 @@ Execute o comando git clone seguido da URL deste repositório, como:
 Depois de clonar o repositório, navegue até o diretório do repositório clonado usando o comando cd.
 
 **Perguntas**
+
 Qualquer duvida entre em contato comigo por aqui.
