@@ -143,7 +143,95 @@ vendas.forEach(venda => {
 
 console.log(`Valor total de vendas: ${totalVendas}`);
 // Exercício 11
+const pedidos = [
+  { cliente: 'João', produto: 'TV', quantidade: 2 },
+  { cliente: 'Maria', produto: 'Computador', quantidade: 3 },
+  { cliente: 'João', produto: 'Telefone', quantidade: 1 },
+  { cliente: 'Maria', produto: 'TV', quantidade: 1 }
+];
+
+const quantidadePorCliente = {};
+
+pedidos.forEach(pedido => {
+  if (!quantidadePorCliente[pedido.cliente]) {
+    quantidadePorCliente[pedido.cliente] = 0;
+  }
+  quantidadePorCliente[pedido.cliente] += pedido.quantidade;
+});
+
+console.log(quantidadePorCliente);
 // Exercício 12
+const estoque = [
+  { produto: 'TV', quantidade: 10, minimo: 20 },
+  { produto: 'Computador', quantidade: 15, minimo: 10 },
+  { produto: 'Telefone', quantidade: 5, minimo: 10 }
+];
+
+estoque.forEach(produto => {
+  if (produto.quantidade < produto.minimo) {
+    produto.quantidade *= 2;
+  }
+});
+
+console.log(estoque);
 // Exercício 13
+const carrinho = {
+  itens: [
+    { nome: 'TV', quantidade: 2, precoUnitario: 2000 },
+    { nome: 'Computador', quantidade: 1, precoUnitario: 1500 },
+    { nome: 'Telefone', quantidade: 3, precoUnitario: 1000 }
+  ]
+};
+
+let totalCarrinho = 0;
+
+carrinho.itens.forEach(item => {
+  totalCarrinho += item.quantidade * item.precoUnitario;
+});
+
+console.log(`Valor total do carrinho: ${totalCarrinho}`);
 // Exercício 14
+const empresa = {
+  departamentos: [
+    {
+      nome: 'Desenvolvimento',
+      funcionarios: [
+        { nome: 'João' },
+        { nome: 'Maria' }
+      ]
+    },
+    {
+      nome: 'Marketing',
+      funcionarios: [
+        { nome: 'Pedro' },
+        { nome: 'Ana' }
+      ]
+    }
+  ]
+};
+
+for (const departamento of empresa.departamentos) {
+  console.log(`Departamento: ${departamento.nome}`);
+  for (const funcionario of departamento.funcionarios) {
+    console.log(`Funcionário: ${funcionario.nome}`);
+  }
+}
 // Exercício 15
+const transacoes = [
+  { tipo: 'entrada', valor: 1000 },
+  { tipo: 'saída', valor: 500 },
+  { tipo: 'entrada', valor: 2000 },
+  { tipo: 'saída', valor: 1000 }
+];
+
+let saldo = 0;
+
+transacoes.forEach(transacao => {
+  if (transacao.tipo === 'entrada') {
+    saldo += transacao.valor;
+  } else {
+    saldo -= transacao.valor;
+  }
+});
+
+console.log(`Saldo final: ${saldo}`);
