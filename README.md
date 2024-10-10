@@ -9,12 +9,11 @@ Abra um terminal ou prompt de comando no seu computador.
 Navegue até o diretório onde você deseja clonar o repositório usando o comando cd.
 Execute o comando git clone seguido da URL deste repositório, como:
 
-``git clone https://github.com/MiguelMorello/CODIFICA_TURMA_FULLSTACK_2/``
-
-**Configurar o Repositório**
-
-Depois de clonar o repositório, navegue até o diretório do repositório clonado usando o comando cd.
-
-**Perguntas**
-
-Qualquer duvida entre em contato comigo por aqui.
+bash
+```
+git clone https://github.com/MiguelMorello/CODIFICA_TURMA_FULLSTACK_2/Lista_1_Modulo1.js
+```
+ e para a lista 2 use 
+```
+git clone https://github.com/MiguelMorello/CODIFICA_TURMA_FULLSTACK_2/Lista_2_Modulo1.js
+```
